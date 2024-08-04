@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Maui.Features.StyleResourcesPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="StyleResourcesPage">
+
+
+    <ContentPage.Resources>
+
+        <Color x:Key="RamyIsColor">#921A40</Color>
+        <Color x:Key="SecondaryColor">#2ecc71</Color>
+        <Color x:Key="HuntColor">#6EACDA</Color>
+
+        <Style x:Key="DefulteButtonStyle" TargetType="Button">
+            <Setter Property="CornerRadius" Value="0" />
+            <Setter Property="Text" Value="100" />
+            <Setter Property="BackgroundColor" Value="Blue" />
+            <Setter Property="FontSize" Value="20" />
+        </Style>
+
+
+
+        <Style x:Key="TitleStyle" TargetType="Label">
+            <Setter Property="FontSize" Value="22" />
+            <Setter Property="TextColor" Value="{StaticResource HuntColor}" />
+        </Style>
+
+        <Style x:Key="SubtitleStyle" TargetType="Label">
+            <Setter Property="FontSize" Value="20" />
+            <Setter Property="TextColor" Value="{StaticResource SecondaryColor}" />
+        </Style>
+    </ContentPage.Resources>
+
+    <StackLayout Margin="{OnPlatform iOS=10, Android=20}">
+
+
+
+        <Button BackgroundColor="{AppThemeBinding Light={StaticResource RamyIsColor}, Dark='#03346E'}" Text="Click me" />
+        <!--<Button BackgroundColor="Red" Style="{StaticResource DefulteButtonStyle}" />
+        <Button Style="{StaticResource DefulteButtonStyle}" Text="ddddddd" />
+        <Label BackgroundColor="{StaticResource RamyIsColor}" Text="Hello, .NET MAUI!" />
+        <Label Style="{StaticResource TitleStyle}" Text="Hello, .NET MAUI!" />
+        <Label Style="{StaticResource SubtitleStyle}" Text="Welcome to Xamarin!" />-->
+    </StackLayout>
+</ContentPage>

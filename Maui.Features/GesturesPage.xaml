@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Maui.Features.GesturesPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="GesturesPage">
+
+    <VerticalStackLayout Margin="20">
+
+        <!--<Label>
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer NumberOfTapsRequired="2" Tapped="TapGestureRecognizer_Tapped_1"/>
+            </Label.GestureRecognizers>
+        </Label>-->
+        <!--  Tap Gesture Recognizers أدوات التعرف على إيماءات النقر  -->
+        <Image Source="dotnet_bot.png">
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="TapGestureRecognizer_Tapped" />
+            </Image.GestureRecognizers>
+        </Image>
+
+        <!--  Swipe Gesture Recognizer أداة التعرف على إيماءات التمرير  -->
+        <StackLayout
+            x:Name="SwapStackLayout"
+            BackgroundColor="Blue"
+            HeightRequest="100"
+            HorizontalOptions="FillAndExpand">
+
+            <Label
+                FontSize="16"
+                HorizontalOptions="CenterAndExpand"
+                Text="اسحب في اي اتجاه"
+                VerticalOptions="CenterAndExpand" />
+
+
+            <StackLayout.GestureRecognizers>
+                <SwipeGestureRecognizer Direction="Left" Swiped="SwipeGestureRecognizer_Swiped" />
+                <SwipeGestureRecognizer Direction="Right" Swiped="SwipeGestureRecognizer_Swiped" />
+                <SwipeGestureRecognizer Direction="Up" Swiped="SwipeGestureRecognizer_Swiped" />
+                <SwipeGestureRecognizer Direction="Down" Swiped="SwipeGestureRecognizer_Swiped" />
+            </StackLayout.GestureRecognizers>
+        </StackLayout>
+
+    </VerticalStackLayout>
+</ContentPage>

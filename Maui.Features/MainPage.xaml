@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Maui.Features.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    FlowDirection="RightToLeft">
+
+    <Grid
+        Margin="20"
+        ColumnDefinitions="*,*"
+        ColumnSpacing="10"
+        RowDefinitions="*,*,*,*,*,*,*,*,*,*,*"
+        RowSpacing="10">
+        <Border
+            Grid.Row="0"
+            Grid.Column="0"
+            Padding="10">
+
+            <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand">
+                <Label HorizontalTextAlignment="Center" Text="Gesture Recognizers" />
+                <Label HorizontalTextAlignment="Center" Text="أجهزة التعرف على الإيماءات" />
+            </StackLayout>
+
+            <Border.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
+            </Border.GestureRecognizers>
+        </Border>
+
+        <Border
+            Grid.Row="0"
+            Grid.Column="1"
+            Padding="10">
+
+            <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand">
+                <Label HorizontalTextAlignment="Center" Text="Resources + Styles" />
+                <Label HorizontalTextAlignment="Center" Text="الموارد " />
+            </StackLayout>
+
+            <Border.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_1" />
+            </Border.GestureRecognizers>
+        </Border>
+
+        <Border
+            Grid.Row="1"
+            Grid.Column="1"
+            Padding="10">
+            <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand">
+                <Label HorizontalTextAlignment="Center" Text="MAUI Community Toolkit" />
+                <Label HorizontalTextAlignment="Center" Text="مجموعة أدوات مجتمع ماوي " />
+            </StackLayout>
+
+            <Border.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_2" />
+            </Border.GestureRecognizers>
+        </Border>
+
+        <Border
+            Grid.Row="1"
+            Grid.Column="0"
+            Padding="10">
+            <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand">
+                <Label HorizontalTextAlignment="Center" Text="Snackbar" />
+                <Label HorizontalTextAlignment="Center" Text="مجموعة أدوات مجتمع ماوي " />
+            </StackLayout>
+
+            <Border.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_2" />
+            </Border.GestureRecognizers>
+        </Border>
+
+        <Border
+            Grid.Row="2"
+            Grid.Column="0"
+            Padding="10">
+            <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand">
+                <Label
+                    FontFamily="Bold"
+                    HorizontalTextAlignment="Center"
+                    Text="File Picker" />
+                <Label
+                    FontFamily="Bold"
+                    HorizontalTextAlignment="Center"
+                    Text="اختيار الملفـات" />
+            </StackLayout>
+
+            <Border.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_3" />
+            </Border.GestureRecognizers>
+        </Border>
+    </Grid>
+
+</ContentPage>

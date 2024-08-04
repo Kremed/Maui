@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Maui.Features.FilesPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="FilesPage">
+    <VerticalStackLayout Margin="20" Spacing="20">
+        <Image
+
+            x:Name="PickedImage"
+            Aspect="AspectFit"
+            BackgroundColor="Gray"
+            HeightRequest="200"
+            HorizontalOptions="Center"
+            VerticalOptions="CenterAndExpand"
+            WidthRequest="200" />
+
+        <Button Clicked="Button_Clicked" Text="اختيار ملف" />
+        <Button Clicked="Button_Clicked_1" Text="قراء الملفات النصية" />
+
+
+
+    </VerticalStackLayout>
+</ContentPage>
